@@ -6,7 +6,15 @@ class WeatherApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tanvir Weather App'),
+        title: Text('Weather App V1'),
+      ),
+      body: Container(
+        child: Center(
+          child: Text(
+            'Tanvir Weather App',
+            style: GoogleFonts.lato(fontSize: 30),
+          ),
+        ),
       ),
     );
   }
