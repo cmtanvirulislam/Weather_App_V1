@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class WeatherApp extends StatelessWidget {
   @override
@@ -9,8 +10,23 @@ class WeatherApp extends StatelessWidget {
         centerTitle: true,
         title: Text('Weather App V1'),
         leading: IconButton(
-          icon: Icon(Icons.search,size: 30,color: Colors.white,),
+          icon: Icon(
+            Icons.search,
+            size: 30,
+            color: Colors.white,
+          ),
         ),
+        actions: [
+          Container(
+            margin: EdgeInsets.fromLTRB(0, 0, 20, 0),
+            child: SvgPicture.asset(
+              'pictures/menu.svg',
+              height: 30,
+              width: 30,
+              color: Colors.white,
+            ),
+          ),
+        ],
       ),
       body: Container(
         child: Stack(
