@@ -24,6 +24,7 @@ class WeatherApp extends StatelessWidget {
           Container(
             margin: EdgeInsets.fromLTRB(0, 0, 20, 0),
             child: GestureDetector(
+              onTap: () => print ('Menu Clicked'),
               child: SvgPicture.asset(
                 'pictures/menu.svg',
                 height: 30,
