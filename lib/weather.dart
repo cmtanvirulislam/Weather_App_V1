@@ -23,11 +23,13 @@ class WeatherApp extends StatelessWidget {
         actions: [
           Container(
             margin: EdgeInsets.fromLTRB(0, 0, 20, 0),
-            child: SvgPicture.asset(
-              'pictures/menu.svg',
-              height: 30,
-              width: 30,
-              color: Colors.white,
+            child: GestureDetector(
+              child: SvgPicture.asset(
+                'pictures/menu.svg',
+                height: 30,
+                width: 30,
+                color: Colors.white,
+              ),
             ),
           ),
         ],
