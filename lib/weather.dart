@@ -10,11 +10,15 @@ class WeatherApp extends StatelessWidget {
         title: Text('Weather App V1'),
       ),
       body: Container(
-        child: Center(
-          child: Text(
-            'Tanvir Weather App',
-            style: GoogleFonts.lato(fontSize: 30),
-          ),
+        child: Stack(
+          children: [
+            Image.asset(
+              'pictures/night.jpg',
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+            )
+          ],
         ),
       ),
     );
