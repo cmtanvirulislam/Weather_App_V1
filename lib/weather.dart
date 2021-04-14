@@ -9,8 +9,9 @@ class WeatherApp extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Weather App V1'),
+        title: Text(''),
         backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.search,
