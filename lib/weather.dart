@@ -6,6 +6,7 @@ class WeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         centerTitle: true,
         title: Text('Weather App V1'),
