@@ -8,6 +8,9 @@ class WeatherApp extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Weather App V1'),
+        leading: IconButton(
+          icon: Icon(Icons.search,size: 30,color: Colors.white,),
+        ),
       ),
       body: Container(
         child: Stack(
