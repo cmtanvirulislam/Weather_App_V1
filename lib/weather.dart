@@ -45,8 +45,13 @@ class WeatherApp extends StatelessWidget {
               width: double.infinity,
             ),
             Container(
-              child: Text('Chittagong',style: GoogleFonts.lato(fontSize: 35,
-                  fontWeight: FontWeight.bold,color: Colors.white),),
+              child: Column(
+                children: [
+                  SizedBox(height: 120,),
+                  Text('Chittagong',style: GoogleFonts.lato(fontSize: 35,
+                      fontWeight: FontWeight.bold,color: Colors.white),),
+                ],
+              ),
             ),
           ],
         ),
