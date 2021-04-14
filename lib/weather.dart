@@ -13,6 +13,7 @@ class WeatherApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
+          onPressed: (){},
           icon: Icon(
             Icons.search,
             size: 30,
